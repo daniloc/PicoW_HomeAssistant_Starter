@@ -44,3 +44,27 @@ See the [examples in `arduino-home-assistant`](https://github.com/dawidchyrzynsk
 
 # Appendix: Setting up a local Home Assistant installation with Mosquitto
 
+## Home Assistant install
+
+Home Assistant can be [installed](https://www.home-assistant.io/installation/) several ways on all kinds of hardware. Raspberry Pi is a popular choice, but you can also use your existing computer for initial explorations. *Home Assistant Container* is probably the quickest and most portable way to get started, whichever hardware you're using, though this does mean you'll have to manage some add-ons yourself, including MQTT.
+
+## MQTT and Mosquitto
+
+MQTT provides realtime messaging between devices in a network. The [Eclipse Mosquitto](https://github.com/eclipse/mosquitto) project offers a server that can act as an _MQTT broker_, a central hub for MQTT devices to send and receive data.
+
+If you're using **Home Assistant Operating System**, check these instructions to [install the Mosquitto MQTT broker add-on](https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md).
+
+If you're using **Home Assistant Container**, [this tutorial](https://hometechhacker.com/mqtt-home-assistant-using-docker-eclipse-mosquitto/) provides a great overview on how to set up and secure Mosquitto in a seperate container.
+
+Once your MQTT broker is enabled, [add the MQTT integration to your Home Assistant instance](https://www.home-assistant.io/integrations/mqtt/).
+
+# Pull requests
+
+PRs are welcome on these points:
+
+- Enhance documentation
+- Refine project structure
+- Additional code paths to accommodate common variations (unsecured MQTT broker, different WiFi authentication, etc)
+- Fix my bad C++
+
+The goal of the project is to provide enough example structure to allow developers to add complexity without making a messy, crowded `main.cpp` file. PRs that simplify down to a single file probably won't be merged.
