@@ -2,7 +2,7 @@
 
 I'm pretty excited about Pico W: it's such a reliable, high-quality board and each one costs just $6 (if you can find one).
 
-I'm building an IoT project with Pico W and Home Assistant, and it took weeks of research and experimentation to figure out the basics of integration with Home Assistant. This starter pulls together everything I've learned so you can get to building quickly.
+I'm building an IoT project with Pico W and Home Assistant, and it took weeks of research and experimentation to figure out the basics of integration of all the necessary components. This starter pulls together everything I've learned so you can get to building quickly.
 
 Fill out `src/Credentials.h`, upload to your Pico W, then you'll have a working integration that allows you to toggle the Pico W's board LED from the Home Assistant dashboard. From this starter you'll have a solid foundation to build your own custom device in a private, local Intranet of Things.
 
