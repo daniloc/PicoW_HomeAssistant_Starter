@@ -19,7 +19,7 @@ This readme will provide pointers to everything needed to get started.
 Prerequisites:
 - PlatformIO set up in VSCode
 - Home Assistant and MQTT broker accessible on the WiFi network your Pico W is joining (see appendix below for guidance on setup)
-- HA MQTT integration with discovery enabled (this is the default/recommended behavior, so unless you turned it off, you're probably good to go).
+- HA MQTT integration with discovery enabled (this is the default/recommended behavior, so unless you turned it off, you're probably good to go)
 ---
 
 1. Hold the `BOOTSEL` button on your Pico W while connecting it via USB
@@ -38,9 +38,15 @@ Prerequisites:
 7. From the resulting list, select `Pico W HA Starter`
 8. Under the **Controls** heading you should see `Board LED`. Toggle the switch to turn your green board LED on and off
 
+<img width="686" alt="Screen Shot 2022-08-27 at 11 53 32 PM" src="https://user-images.githubusercontent.com/213358/187056599-dadeb7d2-89e4-49dd-98a9-9dda8815b6a9.png">
+
 That's it. Now you've got a working example integration of all the pieces needed to communicate between an inexpensive, high-quality microcontroller and Home Assistant, all happening on your local network.
 
 See the [examples in `arduino-home-assistant`](https://github.com/dawidchyrzynski/arduino-home-assistant/tree/main/examples) for additional components you can easily integrate, including sensors, buttons, even HVAC controls.
+
+# Troubleshooting
+
+- To come
 
 # Appendix: Setting up a local Home Assistant installation with Mosquitto
 
@@ -62,7 +68,7 @@ Once your MQTT broker is enabled, [add the MQTT integration to your Home Assista
 
 PRs are welcome on these points:
 
-- Enhance documentation
+- Enhance documentation (especially any troubleshooting steps you found helpful)
 - Refine project structure
 - Additional code paths to accommodate common variations (unsecured MQTT broker, different WiFi authentication, etc)
 - Fix my bad C++
