@@ -67,4 +67,4 @@ PRs are welcome on these points:
 - Additional code paths to accommodate common variations (unsecured MQTT broker, different WiFi authentication, etc)
 - Fix my bad C++
 
-The goal of the project is to provide enough example structure to allow developers to add complexity without making a messy, crowded `main.cpp` file. PRs that simplify down to a single file probably won't be merged.
+The goal of the project is to provide enough example structure to allow developers to add complexity without making a messy, crowded `main.cpp` file. PRs that simplify down to a single file probably won't be merged. If you have ideas on how to make this an even better foundation for building complex IoT projects, I'm all ears.
