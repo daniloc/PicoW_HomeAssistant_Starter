@@ -4,7 +4,9 @@
 #define WIFI_SSID ""
 #define WIFI_PASSWORD ""
 
-#define HA_LOGIN ""
-#define HA_PASSWORD ""
+#define MQTT_LOGIN ""
+#define MQTT_PASSWORD ""
+
+#define MQTT_BROKER IPAddress(192,168,0,42)
 
 #endif // SRC_CREDENTIALS
