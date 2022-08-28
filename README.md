@@ -1,13 +1,12 @@
 # Raspberry Pi Pico W/Arduino/Home Assistant Starter Project
 
-![image](https://user-images.githubusercontent.com/213358/187091688-881e81df-606b-4417-91f5-e10f0567d1cd.gif)
-
-
 I'm pretty excited about Pico W: it's such a reliable, high-quality board and each one costs just $6 (if you can find one).
 
 I'm building an IoT project with Pico W and Home Assistant, and it took weeks of research and experimentation to figure out the basics of integration of all the necessary components. This starter pulls together everything I've learned so you can get to building quickly.
 
 Fill out `src/Credentials.h`, upload to your Pico W, then you'll have a working integration that allows you to toggle the Pico W's board LED from the Home Assistant dashboard. From this starter you'll have a solid foundation to build your own custom device in a private, local Intranet of Things.
+
+![image](https://user-images.githubusercontent.com/213358/187091688-881e81df-606b-4417-91f5-e10f0567d1cd.gif)
 
 This readme will provide pointers to everything you'll need. Let me know if it's missing anything!
 
