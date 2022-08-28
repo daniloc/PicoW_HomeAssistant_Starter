@@ -1,8 +1,8 @@
-# Raspberry Pi Pico W Home Assistant Starter Project
+# Raspberry Pi Pico W/Arduino/Home Assistant Starter Project
 
 This is a [PlatformIO](https://platformio.org) project that instantly integrates a Raspberry Pi Pico W into Home Assistant via MQTT.
 
-Fill out `src/Credentials.h`, upload to your Pico W, then you'll have a working integration that allows you to toggle the Pico W's board LED from the Home Assistant dashboard. From this starter you'll have a solid foundation to build a custom device in a private, local Intranet of Things.
+Fill out `src/Credentials.h`, upload to your Pico W, then you'll have a working integration that allows you to toggle the Pico W's board LED from the Home Assistant dashboard. From this starter you'll have a solid foundation to build your own custom device in a private, local Intranet of Things.
 
 This readme will provide pointers to everything needed to get started.
 
@@ -74,3 +74,7 @@ PRs are welcome on these points:
 - Fix my bad C++
 
 The goal of the project is to provide enough example structure to allow developers to add complexity without making a messy, crowded `main.cpp` file. PRs that simplify down to a single file probably won't be merged. If you have ideas on how to make this an even better foundation for building complex IoT projects, I'm all ears.
+
+---
+
+Questions? Comments? Gripes? Open an [issue](https://github.com/daniloc/PicoW_HomeAssistant_Starter/issues/new/choose) if you think there will be general interest or impact on the project. Otherwise hit me up: [mail@danilocampos.com](mailto:mail@danilocampos.com).
