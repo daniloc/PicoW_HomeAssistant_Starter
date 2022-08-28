@@ -16,7 +16,7 @@ This readme will provide pointers to everything needed to get started.
 ## Getting started
 
 ---
-Prerequisites:
+### Prerequisites
 - PlatformIO set up in VSCode
 - Home Assistant and MQTT broker accessible on the WiFi network your Pico W is joining (see appendix below for guidance on setup)
 - HA MQTT integration with discovery enabled (this is the default/recommended behavior, so unless you turned it off, you're probably good to go)
