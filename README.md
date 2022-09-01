@@ -1,4 +1,4 @@
-# Raspberry Pi Pico W/Arduino/Home Assistant Starter Project
+# Raspberry Pi Pico W Home Assistant Starter Project using `arduino-pico`
 
 I'm pretty excited about Pico W: it's such a reliable, high-quality board and each one costs just $6 (if you can find one).
 
