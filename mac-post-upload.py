@@ -1,7 +1,8 @@
 # Clear the obnoxious disk ejected alerts in macOS
-
+import platform
 from subprocess import Popen, PIPE
 Import("env")
+
 
 def after_upload(source, target, env):
     scpt = '''
@@ -25,4 +26,5 @@ def after_upload(source, target, env):
     stdout, stderr = p.communicate(scpt.encode())
     print (p.returncode, stdout, stderr)
 
-env.AddPostAction("upload", after_upload)
+if(platform.system() == "Darwin"):
+    env.AddPostAction("upload", after_upload)
