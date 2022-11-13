@@ -12,7 +12,7 @@
 WiFiClient client;
 HADevice device;
 HAMqtt mqtt(client, device);
-HASwitch led("led", false);
+HASwitch led("led");
 
 void HAIntegration::configure() {
 
@@ -33,7 +33,7 @@ void HAIntegration::configure() {
     device.setSoftwareVersion("0.1");
 
     // handle switch state
-    led.onStateChanged(switchHandler);
+    led.onCommand(switchHandler);
     led.setName("Board LED"); // optional
 
     Serial.print("Connecting to MQTT\n");
