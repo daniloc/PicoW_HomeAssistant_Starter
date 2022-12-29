@@ -47,6 +47,7 @@ void HAIntegration::configure() {
 
 void HAIntegration::switchHandler(bool state, HASwitch* sender) {
     digitalWrite(LED_PIN, (state ? HIGH : LOW));
+    sender->setState(state);  // report state back to Home Assistant
 }
 
 
