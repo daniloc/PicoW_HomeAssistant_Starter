@@ -12,7 +12,7 @@
 WiFiClient client;
 HADevice device;
 HAMqtt mqtt(client, device);
-HASwitch led("led");
+HASwitch led("led");  // unique identifier must not contain spaces
 
 void HAIntegration::configure() {
 
@@ -35,6 +35,7 @@ void HAIntegration::configure() {
     // handle switch state
     led.onCommand(switchHandler);
     led.setName("Board LED"); // optional
+    led.setIcon("mdi:led-outline"); // optional (Used to set the icon used in HA)
 
     Serial.print("Connecting to MQTT\n");
     
