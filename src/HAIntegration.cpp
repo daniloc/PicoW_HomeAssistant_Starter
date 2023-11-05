@@ -31,6 +31,9 @@ void HAIntegration::configure() {
 
     device.setName("Pico W HA Starter");
     device.setSoftwareVersion("0.1");
+    device.enableSharedAvailability(); // [OPTIONAL] Enables the ability to set the on/off line status of the device
+    device.setAvailability(true); // Set the device to on-line
+    device.enableLastWill(); // [OPTIONAL] Allows HA to detect when the device losses power (and thus disable the controls in the HA UI)
 
     // handle switch state
     led.onCommand(switchHandler);
